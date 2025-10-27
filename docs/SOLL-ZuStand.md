@@ -21,7 +21,7 @@ Dies ist die "Single Source of Truth" für alle IPs, VMs und Dienste.
 | **RD-SESS01** | `VM-RDS1`   | RD Session Host 1       | `100.55`   | `100.1` | `100.10`   | `100.11`|
 | **RD-SESS02** | `VM-RDS2`   | RD Session Host 2       | `100.56`   | `100.1` | `100.10`   | `100.11`|
 | **CLIENT01** | `VM-CLIENT01`| Test-Client            | `DHCP`     | `DHCP`  | `DHCP`     | `DHCP`  |
-| **DHCP-BEREICH**| (Logisch)   | `monses.lab` Scope      | `100.100-150`| `100.1` | `100.10`   | `100.11`|
+| **DHCP-BEREICH**| (Logisch)   | **`matzke.lab` Scope** | `100.100-150`| `100.1` | `100.10`   | `100.11`|
 
 ## 2. VM-Inventar (Ressourcenplan)
 
