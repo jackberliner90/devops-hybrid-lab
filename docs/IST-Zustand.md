@@ -9,7 +9,7 @@ Dies dokumentiert die physische und Netzwerk-Infrastruktur vor Projektbeginn am 
 * **RAM:** 64 GB DDR4
 * **Speicher:** 1.5 TB SSD 
 * **Host-OS:** Windows Server 2022 Datacenter (Basis-Installation, noch keine Rollen konfiguriert)
-* **IP-Adresse (Statisch):** `192.168.178.100` *(Bitte prüfen und ggf. an dein Heimnetz anpassen)*
+* **IP-Adresse (Statisch):** `192.168.178.100` 
 
 ## 2. Admin-Arbeitsplatz
 
@@ -23,7 +23,7 @@ Dies dokumentiert die physische und Netzwerk-Infrastruktur vor Projektbeginn am 
 
 * **Router:** AVM FritzBox 7490
 * **Netzwerk-ID:** `192.168.178.0/24`
-* **Router/Gateway IP:** `192.168.178.1` *(Standard-IP der FritzBox, bitte prüfen)*
+* **Router/Gateway IP:** `192.168.178.1` 
 * **Internet-Zugang:** Vorhanden.
 
 ## 4. Cloud-Konten & Software
