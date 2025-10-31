@@ -1,6 +1,10 @@
 # Portfolio: DevOps Hybrid-Cloud Infrastruktur (WIP 🚧)
 
+<<<<<<< HEAD
 Dieses Repository dokumentiert den Aufbau meiner Hybrid-Cloud-Laborumgebung. Das Ziel ist die praxisnahe Umsetzung von DevOps-Prinzipien (IaC, Security, CI/CD) und die Vorbereitung auf die Zertifizierungen AZ-104, AZ-800 und AZ-801.AZ-400
+=======
+Dieses Repository dokumentiert den Aufbau meiner Hybrid-Cloud-Laborumgebung. Das Ziel ist die praxisnahe Umsetzung von DevOps-Prinzipien (IaC, Security, CI/CD) und die Vorbereitung auf die Zertifizierungen AZ-104, AZ-400 ,AZ-800 und AZ-801.
+>>>>>>> e09121df6a1eb065a6e20428daaab7ca88df172b
 
 **Status:** In Arbeit. Der Fortschritt wird über [das Projekt-Board](https://github.com/users/jackberliner90/projects/1) getrackt. *(Link ggf. anpassen)*
 
