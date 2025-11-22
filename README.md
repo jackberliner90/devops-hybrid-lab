@@ -11,7 +11,7 @@ Dies ist der logische Netzplan für das finale Setup (Domain: `matzke.lab`):
 ```text
                                 [ ☁️ INTERNET ]
                                       ^
-                                      | (Hat öffentliche IP: z.B. 178.254.36.236)
+                                      | (Hat öffentliche IP: z.B. 178.254.***.***)
 +-------------------------------------+-------------------------------------------------------+
 | [ ☁️ 1blu VPS SX (Hub) ]             | [ ☁️ AZURE CLOUD ]                                    |
 |   (OS: Ubuntu, Docker, k3s)         |   (Für M365, Cloud Witness, AD Connect, SQL DB)       |
