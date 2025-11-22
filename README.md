@@ -1,10 +1,6 @@
 # Portfolio: DevOps Hybrid-Cloud Infrastruktur (WIP 🚧)
 
-<<<<<<< HEAD
-Dieses Repository dokumentiert den Aufbau meiner Hybrid-Cloud-Laborumgebung. Das Ziel ist die praxisnahe Umsetzung von DevOps-Prinzipien (IaC, Security, CI/CD) und die Vorbereitung auf die Zertifizierungen AZ-104, AZ-800 und AZ-801.AZ-400
-=======
-Dieses Repository dokumentiert den Aufbau meiner Hybrid-Cloud-Laborumgebung. Das Ziel ist die praxisnahe Umsetzung von DevOps-Prinzipien (IaC, Security, CI/CD) und die Vorbereitung auf die Zertifizierungen AZ-104, AZ-400 ,AZ-800 und AZ-801.
->>>>>>> e09121df6a1eb065a6e20428daaab7ca88df172b
+Dieses Repository dokumentiert den Aufbau meiner Hybrid-Cloud-Laborumgebung. Das Ziel ist die praxisnahe Umsetzung von DevOps-Prinzipien (IaC, Security, CI/CD) und die Vorbereitung auf die Zertifizierungen AZ-104, AZ-400, AZ-800 und AZ-801.
 
 **Status:** In Arbeit. Der Fortschritt wird über [das Projekt-Board](https://github.com/users/jackberliner90/projects/1) getrackt. *(Link ggf. anpassen)*
 
@@ -15,14 +11,14 @@ Dies ist der logische Netzplan für das finale Setup (Domain: `matzke.lab`):
 ```text
                                 [ ☁️ INTERNET ]
                                       ^
-                                      | (Hat öffentliche IP: z.B. 88.99.100.101)
+                                      | (Hat öffentliche IP: z.B. 178.254.36.236)
 +-------------------------------------+-------------------------------------------------------+
-| [ ☁️ HETZNER Cloud VPS 20 ]          | [ ☁️ AZURE CLOUD ]                                    |
+| [ ☁️ 1blu VPS SX (Hub) ]             | [ ☁️ AZURE CLOUD ]                                    |
 |   (OS: Ubuntu, Docker, k3s)         |   (Für M365, Cloud Witness, AD Connect, SQL DB)       |
 |                                     |                                                       |
-|   [ 🐳 Container: WireGuard-Server (HUB) ]|   • ❗Azure SQL Database (Für RDS-Broker HA)         |
+|   [ 🐳 Container: WireGuard-Server ] |   • ❗Azure SQL Database (Für RDS-Broker HA)         |
 |       (VPN-Netz: 10.200.0.0/24)     |   • Storage (Cloud Witness)                           |
-|   [ 🐳 Container: Nginx, osTicket ...] |                                                       |
+|   [ 🐳 Container: Nginx, osTicket ]  |                                                       |
 +-------------------------------------+-------------------------------------------------------+
        ^                                    ^ ^
        | (S2S VPN-Tunnel)                   | | (Quorum)
@@ -36,7 +32,7 @@ Dies ist der logische Netzplan für das finale Setup (Domain: `matzke.lab`):
 |                                                                                           |
 | --- Hyper-V VMs (Domain: matzke.lab) --------------------------------------------------- |
 |                                                                                           |
-|   [ 🛡️ VM: ROUTER-VM (Linux, 100.1) ] (Baut S2S-Tunnel ZU Hetzner)                          |
+|   [ 🛡️ VM: ROUTER-VM (Linux, 100.1) ] (Baut S2S-Tunnel ZU 1blu-Hub)                         |
 |   [ 🤖 VM: DC01 (100.10) ] --(AD Connect)--> [ ☁️ AZURE CLOUD ]                             |
 |   [ 🤖 VM: DC02 (100.11) ]                                                                  |
 |   [ 📁 VM: FS01 (100.20) ] --(Quorum)------> [ ☁️ AZURE CLOUD ]                             |
